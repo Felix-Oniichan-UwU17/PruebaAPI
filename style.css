@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-image: url('./img/leagueoflegends.jpg');
+    background-size: cover;
+
+}
+
+
+.letras{
+    font-family: 'Press Start 2P';
+    color: rgb(2, 3, 5);
+    text-align: center;
+}
+
+ul {
+    background-color: thistle;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 100%;
+    position: fixed;
+    list-style-type: none;
+}
+
+
+li, .titulo {
+    font-family: 'Press Start 2P';
+    color: azure;
+}
+
+li a{
+    display: block;
+    float: right;
+    height: 100%;
+    margin-right: 40PX; 
+}
+
+li a:last-child{
+    padding-inline: 10px;
+    border-left: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    position: absolute;
+}
