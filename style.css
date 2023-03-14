@@ -2,24 +2,45 @@
 
 body {
     background-image: url('./img/leagueoflegends.jpg');
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat:unset;
 }
 
+.container{
+    display: flex;
+   
+}
 
 .letras{
     font-family: 'Press Start 2P';
+    display: flex;
     color: rgb(2, 3, 5);
-    text-align: center;
+    text-align: right;
     background-color: rgba(167, 130, 230, 0.8);
     height: 250%;
     width: 85%;
     padding: 40px;
     border-radius: 40px;
     margin: 30px;
-    
+    font-size:x-small;
+    line-height: 40px;
+    flex-direction: column;
+}
+
+
+.E{
+    font-family: 'Press Start 2P';
+    color: rgb(2, 3, 5);
+    text-align: left;
+    height: 250%;
+    width: 85%;
+    padding: 40px;
+    margin: 30px;
+    font-size:x-small;
+    line-height: 40px;
 }
 
 ul {
@@ -54,4 +75,28 @@ li a:last-child{
 
 .titulo {
     position: absolute;
+}
+
+h1 {
+    font-size: small;
+}
+
+.XD {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: medium;
+}
+
+.image {
+position: relative;
+display: flex;
+align-items: right;
+justify-content: right;
+transform: translateY(-527px);
+}
+
+img {
+width: 80%;
+height: 100%;
 }

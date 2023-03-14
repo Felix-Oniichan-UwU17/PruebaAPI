@@ -12,7 +12,7 @@ const cargaMinecraft = () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '4904ff981dmsh9e81fbad5f2a81ep118290jsn7fd5bd4f856b',
+            'X-RapidAPI-Key': '676a537e70mshff52d286f63a671p10a789jsnd9caa5cd15aa',
             'X-RapidAPI-Host': 'league-of-legends-esports.p.rapidapi.com'
         }
     };
@@ -30,11 +30,11 @@ const cargaMinecraft = () => {
 
 const dibujaNoticias = () => {
     news.forEach((item) => {
-        noticia.querySelector('h1').textContent = item.id
-        noticia.querySelector('h2').textContent = item.summonerName
-        noticia.querySelector('h3').textContent = item.firstName
-        noticia.querySelector('h4').textContent = item.role
-    
+        noticia.querySelector('.id').textContent = item.id
+        noticia.querySelector('.slug').textContent = item.summonerName
+        noticia.querySelector('.name').textContent = item.firstName
+        noticia.querySelector('.role').textContent = item.role
+        noticia.querySelector('img').setAttribute('src', item.image) 
 
         const clone = noticia.cloneNode(true)
         fragment.appendChild(clone)
