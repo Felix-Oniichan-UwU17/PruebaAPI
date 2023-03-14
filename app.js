@@ -34,6 +34,7 @@ const dibujaNoticias = () => {
         noticia.querySelector('h2').textContent = item.summonerName
         noticia.querySelector('h3').textContent = item.firstName
         noticia.querySelector('h4').textContent = item.role
+    
 
         const clone = noticia.cloneNode(true)
         fragment.appendChild(clone)

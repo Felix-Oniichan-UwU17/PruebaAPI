@@ -3,7 +3,9 @@
 body {
     background-image: url('./img/leagueoflegends.jpg');
     background-size: cover;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -11,6 +13,13 @@ body {
     font-family: 'Press Start 2P';
     color: rgb(2, 3, 5);
     text-align: center;
+    background-color: rgba(167, 130, 230, 0.8);
+    height: 250%;
+    width: 85%;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 30px;
+    
 }
 
 ul {
